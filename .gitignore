@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+src/__pycache__/
+
+# 环境变量文件
+.env
+
+# 输出文件
+*.epub
+
+# 忽略assets和novels文件夹中的所有文件
+assets/*
+novels/*
+
+# 但保留文件夹本身
+!assets/
+!novels/
+
+# IDE配置
+.vscode/
+.idea/
