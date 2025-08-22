@@ -1,5 +1,44 @@
 # 使用示例
 
+## 路径配置示例
+
+### 路径配置说明
+
+在配置 `.env` 文件时，文件路径的配置非常重要。推荐使用绝对路径以避免路径解析错误。
+
+### 示例1：Windows 系统路径配置
+
+**配置文件 `.env`**：
+```env
+# 使用绝对路径（推荐）
+TXT_FILE=C:/Users/YourName/Desktop/Novel_Converter_txt2epub-main/novels/novel.txt
+COVER_IMAGE=C:/Users/YourName/Desktop/Novel_Converter_txt2epub-main/assets/cover.jpg
+TITLE=我的小说
+AUTHOR=作者名
+```
+
+### 示例2：macOS/Linux 系统路径配置
+
+**配置文件 `.env`**：
+```env
+# 使用绝对路径（推荐）
+TXT_FILE=/home/username/Desktop/Novel_Converter_txt2epub-main/novels/novel.txt
+COVER_IMAGE=/home/username/Desktop/Novel_Converter_txt2epub-main/assets/cover.jpg
+TITLE=我的小说
+AUTHOR=作者名
+```
+
+### 示例3：相对路径配置（备选方案）
+
+**配置文件 `.env`**：
+```env
+# 使用相对路径（需要确保文件在正确位置）
+TXT_FILE=./novels/novel.txt
+COVER_IMAGE=./assets/cover.jpg
+TITLE=我的小说
+AUTHOR=作者名
+```
+
 ## 章节标记功能使用示例
 
 ### 示例1：基本使用
